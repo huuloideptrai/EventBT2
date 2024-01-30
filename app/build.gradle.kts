@@ -1,15 +1,16 @@
 plugins {
     id("com.android.application")
 }
+val compileSdkVersion by extra(34)
 
 android {
     namespace = "org.duchoang.events"
-    compileSdk = 34
+    compileSdkVersion(compileSdkVersion)
 
     defaultConfig {
-        applicationId = "org.duchoang.events"
+        applicationId = rootProject.extra["defaultApplicationId"] as String
         minSdk = 28
-        targetSdk = 34
+        targetSdkVersion(rootProject.extra["defaultApplicationId"] as String)
         versionCode = 1
         versionName = "1.0"
 
@@ -23,8 +24,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }
 

@@ -1,4 +1,4 @@
-package org.duchoang.events;
+package org.huuloi.events;
 
 import android.content.Context;
 

@@ -2,3 +2,5 @@
 plugins {
     id("com.android.application") version "8.2.0" apply false
 }
+val sourceCompatibility by extra(VERSION_17)
+val defaultApplicationId by extra("org.huuloi.events")
