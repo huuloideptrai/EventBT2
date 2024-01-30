@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Events</string>
+    <string name="app_login">ĐĂNG NHẬP</string>
+    <string name="app_register">ĐĂNG KÝ</string>
+</resources>

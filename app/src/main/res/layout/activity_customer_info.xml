@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerInfoActivity">
+
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập thông tin khách hàng"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="30dp"
+        android:background="@color/backgroundMain"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/headerText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edt_bg"
+        android:hint="Họ và Tên" />
+
+    <EditText
+        android:id="@+id/editTextCustomerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/editTextCustomerName"
+        android:layout_margin="30dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/rounded_edt_bg"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/editTextCustomerEmail"
+        android:layout_margin="30dp"
+        android:inputType="phone"
+        android:hint="Số Điện Thoại"
+        android:background="@drawable/rounded_edt_bg"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextCustomerPhone"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/backgroundMain"
+        android:text="Xác Nhận"
+        android:textSize="18sp" />
+
+</RelativeLayout>
